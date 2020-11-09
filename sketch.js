@@ -20,11 +20,12 @@ function setup() {
 	roof = new Roof(width/2,height+10,width,20);
 
 	bob1 = new bob(width/2,height-20,20);
+	// bob2 = new bob(width/2-10)
 
-	rope1 = new rope(bob1,roof);
-	rope2 = new rope(bob2,roof);
-	rope3 = new rope(bob3,roof);
-	rope4 = new rope(bob4,roof);
+	rope1 = new Rope(bob1.body,roof.body,-100,0);
+	rope2 = new Rope(bob2.body,roof.body,-100,0);
+	rope3 = new Rope(bob3.body,roof.body,-100,0);
+	rope4 = new Rope(bob4.body,roof.body,-100,0);
 
 	Engine.run(engine);
   
