@@ -15,6 +15,7 @@ class Rope{
         var posA=this.chain.bodyA.position;
         var posB=this.chain.bodyB.position;
         strokeWeight(2);
+        stroke("black");
         line(posA.x,posA.y,posB.x+this.offsetX,posB.y+this.offsetY); 
         } 
     }
